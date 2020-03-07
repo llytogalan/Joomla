@@ -1,0 +1,123 @@
+/* ============ CONTENT MODULE ============ */
+ul {
+	&.newsfeed,
+	&.archive-module,
+	&.relateditems,
+	&.categories-module,
+	&.category-module,
+	&.mostread,
+	&.latestnews,
+	&.latestusers {
+		@include rtl-padding-left(15px);
+		margin: 0;
+		li {
+			list-style-type: initial;
+			p,
+			:not(a) {
+				color: #666;
+			}
+		}
+		&.articles-list {
+			@include rtl-padding-left(0);
+			li {
+				list-style: none;
+				border-top: 1px solid #ccc;
+				padding: 15px 0 14px;
+				.mod-articles-category-title  {
+					display: block;
+					  font-size: 14px;
+					  font-weight: 500;
+					  color: #000;
+				}
+				.mod-articles-category-writtenby, .mod-articles-category-date {
+					font-size: 12px;
+					color: #666;
+					margin: 3px 0 10px;
+					display: inline-block;
+					&:before {
+						display: inline-block;
+						font: normal normal normal 12px/1 FontAwesome;
+						font-size: inherit;
+						text-rendering: auto;
+						-webkit-font-smoothing: antialiased;
+						font-size: 12px;
+						margin-right: 3px;
+					}
+				}
+				.mod-articles-category-writtenby:before {
+					content: "\f2c0";
+				}
+				.mod-articles-category-date {
+					margin-left: 10px;
+					margin-right: 10px;
+					&:before {
+						content: "\f133";
+					}
+				}
+				&:first-child {
+					border-top: none;
+					padding-top: 0;
+				}
+			}
+		}
+	}
+	&.newsfeed {
+		padding: 0;
+		.lead {
+			font-size: 14px;
+			margin: 0 0 10px;
+			font-weight: normal;
+		}
+		li {
+			line-height: 21px;
+			list-style: none;
+			.feed-link {
+				margin: 15px 0 3px;
+				display: block;
+				font-weight: bold;
+			}
+		}
+	}
+	&.categories-module {
+		ul {
+			@include rtl-padding-left(15px);
+			li {
+				//p,
+				//:not(a) {
+				//	color: #4b5f74;
+				//}
+			}
+		}
+		h4,h5,h6 {
+			font-weight: normal;
+			font-size: 14px;
+			margin: 10px 0 0;
+		}
+		p {
+				margin: 0;
+			}
+	}
+}
+.newsflash {
+	.introtext {
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.newsflash-item {
+		padding: 15px;
+		border: 1px solid #D1D6DE;
+		margin-bottom: 5px;
+		overflow: hidden;
+		img {
+			margin: -15px -15px 0;
+			width: calc(100% + 30px);
+			max-width: calc(100% + 30px);
+		}
+	}
+}
+.btn.readmore {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+ 

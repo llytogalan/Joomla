@@ -1,0 +1,305 @@
+.items-border > li {
+	border-bottom: 1px solid #E7EAEE;
+}
+.footer-module-menu {
+	.module-title .box-title {
+		position: relative;
+		margin-top: 3px;
+		font-size: 18px;
+		font-weight: 600;
+		&:after {
+			position: absolute;
+			width: 56px;
+			height: 2px;
+			content: '';
+			top: -8px;
+			@include rtl-left(0);
+			margin-bottom: 8px;
+		}
+	}
+	ul.menu li a, ul.menu li > span {
+		padding: 1.5px 0;
+	}
+}
+/* ============ PROMO IMAGE SHOW============ */
+.jsn-gallery{
+	[id*="jsn-themeclassic-"] {
+		display: block !important;
+	}
+}
+.jsn_promoslider{
+	[id^="jsn-themeclassic-"] {
+		display: block!important;
+		.galleria-info-text{
+			background: transparent !important;
+		}
+		.galleria-info {
+			background: transparent;
+			width: auto !important;
+			max-width: 50%;
+			top: 50% !important;
+			transform: translateY(-50%);
+			@media(min-width: 992px){
+				left:  calc((100vw - 970px) / 2) !important;
+				max-width: calc((1170px + 30px ) / 2);
+			}
+			@media(min-width: 1200px){
+				left:  calc((100vw - 1170px) / 2) !important;
+			}
+		}
+		.galleria-info-description {				
+			margin-top: 13px;
+			color: #fff;
+			.btn{
+				font-style: normal !important;
+				font-size: 14px;
+				margin-top: 20px;
+				border: none;
+				//padding: 9px 20px;
+				line-height: 1.5;
+				font-weight: 500;
+			}
+			p {
+				font-size: 16px;
+				line-height: 1.5;
+			}
+		}
+		.galleria-image-nav {
+			z-index: 99;
+			.galleria-image-nav-left {
+				left: calc((100vw - 1170px) / 4) !important;
+			}
+			.galleria-image-nav-right {
+				right: calc((100vw - 1170px) / 4) !important;
+			}
+		}
+		.box_skitter .info_slide_dots {
+			background: transparent;
+			.image_number {
+				margin: 0 6px 0 0;
+				border-radius: 0;
+				width: 20px;
+				height: 6px;
+			}
+			.image_number:not(.image_number_select){
+				background: #fff !important;
+			}
+		}
+	}
+}
+.hover-image {
+	display: block;
+	position: relative;
+	&:after {
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		content: "";
+		position: absolute;
+		opacity: 0;
+		transition: opacity .3s;
+		pointer-events: none;
+		z-index: 2;
+	}
+	&:before {
+		display: inline-block;
+		font: normal normal normal 20px/1 FontAwesome;
+		content: "\f067";
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		background: #fff;
+		border-radius: 100%;
+		top: 50%;
+		opacity: 0;
+		position: absolute;
+		transform: translate(-50%,-50%);
+		left: 50%;
+		z-index: 3;
+		text-align: center;
+	}
+	&:hover:after, &:hover:before {
+		opacity: 1;
+	}
+}
+.hover-bg {
+	display: block;
+	position: relative;
+	&:after {
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		content: "";
+		position: absolute;
+		opacity: 0;
+		transition: opacity .3s;
+		pointer-events: none;
+		z-index: 2;
+	}
+	&.cyan:after {
+		background: #019d90;
+	}
+	&.orange:after {
+		background: #e86400;
+	}
+	&.blue:after {
+		background: #0e55aa;
+	}
+	&:hover:after, &:hover:before {
+		opacity: 1;
+	}
+	> div {
+		z-index: 3;
+	}
+}
+#sunfw-master section .hover-name {
+	> div {
+		padding: 21px 40px !important;
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.3s ease-in-out;
+		height: 0;
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		height: 100%;
+		min-height: 60px;
+		transform: scale(0);
+	}
+	> h3 {
+		visibility: visible;
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 2;
+	}
+	&:hover {
+		h3 {
+			opacity: 0;
+			visibility: hidden;
+			//display: none;
+			z-index: 1;
+			transition: visibility 0.5s ease-in-out;
+		}
+		> div {
+			transform: scale(1);
+			//visibility: visible;
+			transition: transform 0.5s ease-in-out;
+			z-index: 2;
+		}
+	}
+}
+#sunfw-master section .hover-block {
+	margin-top: 0;
+	transition: margin-top 0.3s ease-in-out;
+	&:hover {
+		box-shadow: 0 25px 33px 0 rgba(179, 179, 179, 0.7);
+		margin-top: -10px;
+		transition: margin-top 0.3s ease-in-out;
+		.hover-name {
+			h3 {
+				opacity: 0;
+				visibility: hidden;
+				//display: none;
+				z-index: 1;
+				transition: visibility 0.5s ease-in-out;
+			}
+			> div {
+				transform: scale(1);
+				//visibility: visible;
+				transition: transform 0.5s ease-in-out;
+				z-index: 2;
+			}
+		}
+	}
+}
+.navigation-slider {
+.galleria-image-nav {
+	.galleria-image-nav-right, .galleria-image-nav-left {
+		//top: auto;
+		//left: auto;
+		width: 40px;
+		height: 40px;
+		z-index: 1111;
+		font-size: 0;
+		text-align: center;
+		padding: 10px;
+		z-index: 9;
+		transition: all 0.25s ease-in-out;
+		opacity: 1;
+		&:after {
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: 14px;
+			color: #fff;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+		}
+	}
+	.galleria-image-nav-left {
+		left: 30px;
+		bottom: -16px;
+		&:after {
+			content: "\f104";
+		}
+	}
+	.galleria-image-nav-right {
+		right: 30px;
+		bottom: -16px;
+		&:after {
+			content: "\f105";
+		}
+	}
+}
+}
+// Fix JSN ImageShow Theme Masonry.
+@media (max-width: $screen-xs-max) {
+	[id*='jsn-thememasonry-container'] .jsn-is-msnry-grid {
+	     width: 100% !important; 
+	}
+	#sunfw-master .jsn_promoslider [id^="jsn-themeclassic-"] {
+		.galleria-info-description {
+			margin-top: 0;
+			p {
+				font-size: 13px;
+			}
+			.btn {
+				margin-top: 10px;
+			}
+		}
+		.galleria-info {
+			max-width: 100%;
+			.galleria-info-text .galleria-info-title {
+				font-size: 28px;
+				margin-bottom: 0;
+			}
+		}
+	}
+	.footer-module-menu ul.menu li a {
+		font-size: 13px;
+	}
+	.jsn-master .jsn-narrow .jsn-daterangepicker.hasDatepicker,
+	.jsn-uniform.jsn-master input[type="text"] {
+		width: calc(100% - 22px) !important;
+	}
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	.jsn-is-msnry-grid {
+	    margin: 0 auto;
+	}
+}
+@media (max-width: 320px) {
+#sunfw-master .jsn_promoslider [id^="jsn-themeclassic-"] .galleria-info-description p {
+    font-size: 10px;
+	margin-bottom: 0;
+}
+#sunfw-master .jsn_promoslider [id^="jsn-themeclassic-"] .galleria-info .galleria-info-text .galleria-info-title {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+}

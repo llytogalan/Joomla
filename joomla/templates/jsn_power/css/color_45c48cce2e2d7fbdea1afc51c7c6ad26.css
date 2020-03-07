@@ -1,0 +1,130 @@
+/* ============================ */
+.sunfw-content .main-color {
+  color: #ed1c23;
+}
+.sunfw-content .bg-main-color {
+  background: #ed1c23;
+}
+.sunfw-content .bg-main-color-hover:hover {
+  background: #ed1c23 !important;
+}
+ul.newsfeed li, ul.archive-module li, ul.relateditems li, ul.categories-module li, ul.category-module li, ul.mostread li, ul.latestnews li, ul.latestusers li {
+  color: #ed1c23;
+}
+ul.newsfeed li a *, ul.archive-module li a *, ul.relateditems li a *, ul.categories-module li a *, ul.category-module li a *, ul.mostread li a *, ul.latestnews li a *, ul.latestusers li a * {
+  color: #ed1c23;
+}
+ul.categories-module ul li {
+  color: #ed1c23;
+}
+.item-page.edit #com-content-formTabs > li.active > a:hover, .item-page.edit #com-content-formTabs > li.active > a {
+  border-top-color: #ed1c23;
+}
+.item-page.edit #com-content-formTabs > li > a:hover {
+  border-top-color: #ed1c23;
+}
+.richbox-2 .module-title h3.box-title:before, .lightbox-2 .module-title h3.box-title:after {
+  background: #ed1c23;
+}
+div.pagination ul.pagination li a:hover, div.pagination ul.pagination li.active a, div.itemComments .itemCommentsForm form input#submitCommentButton {
+  background-color: #ed1c23;
+}
+div.catItemReadMore a {
+  color: #ed1c23;
+}
+.carousel-control > span:not(.sr-only) {
+  background-color: #ed1c23;
+}
+.label-info[href]:hover, .label-info[href]:focus, .content_rating + form input[name="submit_vote"] {
+  background: #ed1c23;
+  border-color: #ed1c23;
+}
+ul.nav[class*='menu-treemenu'] li a:hover {
+  color: #ed1c23;
+}
+.color-img img {
+  background-color: #ed1c23;
+}
+dl.search-results dt.result-title a:hover, .blog-featured h2.item-title a:hover, .blog h2.item-title a:hover, .cat-children .item-title.page-header a:hover, .categories-list .item-title.page-header a:hover, .box-effect-hover .box-image .box-icon a {
+  color: #ed1c23 !important;
+}
+.bg-main-color .jsn-es-background {
+  background-color: #ed1c23 !important;
+}
+ul.nav[class*='menu-treemenu'] li.current > a {
+  color: #ed1c23;
+}
+blockquote {
+  border-color: #ed1c23;
+}
+blockquote i.fa {
+  color: #ed1c23;
+}
+.btn.btn-plain:after {
+  background-color: #ed1c23;
+}
+.text-main-color-hover:hover, .sunfw-quote i.fa {
+  color: #ed1c23;
+}
+.sunfw-quote {
+  border-color: #ed1c23;
+}
+div.pagination ul.pagination li a, ul.nav.menu li a:hover, .btn.btn-plain:hover {
+  color: #ed1c23;
+}
+.bg-2nd-subcolor {
+  background-color: #564a49;
+}
+.sunfw-scrollup:hover {
+  background-color: #858585;
+}
+.box-tabs > nav > [data-active="true"] {
+  color: #ed1c23;
+}
+nav.navbar.sunfw-menu-head ul.navbar-nav > li:hover > a, nav.navbar.sunfw-menu-head ul.navbar-nav > li.active > a {
+  color: #ed1c23;
+}
+.navigation-slider .galleria-image-nav .galleria-image-nav-right, .navigation-slider .galleria-image-nav .galleria-image-nav-left, .box-effect-hover .box-image:after {
+  background: #ed1c23;
+}
+.contact-category ul [class*="span"].list-title a:hover, .contact .accordion-group .accordion-heading a:hover, .btn.btn-plain:hover, [class*="j2store-"] .sale-price, .hover-image:before, .j2store-products-row .j2store-single-product .j2store-thumbnail-image a:before, .j2store-product-module .j2store-module-product-row .j2store-product-image.top a:before, .btn.btn-outline, .page-header h2 a:hover {
+  color: #ed1c23;
+}
+.readmore a:hover {
+  color: #ed1c23;
+}
+div.tagspopular ul li a, .j2store-single-product .tab-content-detail #j2store-product-detail-tab li.active a, .j2store-single-product .tab-content-detail #j2store-product-detail-tab li a:hover, .j2store-categories-module li h4 a:hover, ul.sunfw-tpl-menu > li.megamenu ul.sunfw-megamenu-sub-menu .modulecontainer h3.module-title, .label-info, div.pagination ul.pagination li:not([class*="hidden-"]) a, div.pagination ul.pagination li.disabled a, body#sunfw-master .hover-main-color:hover, ul.category-module.articles-list li .mod-articles-category-title:hover, [class*="j2store-"] .product-title:hover {
+  color: #ed1c23;
+}
+.itemView .contentPost .itemTagsBlock .itemTags li a:hover, .catItemTags li a:hover, .userView .userItemView .userItemBody .userDescItem .userItemTagsBlock .userItemTags li a:hover {
+  background-color: #ed1c23;
+  border-color: #ed1c23;
+}
+.j2store-sidebar-filters-container #j2store-slider-range .ui-slider-handle, .j2store .j2store-cart .table-bordered + .buttons-right .cart-checkout-button a.btn-success, .j2store-minicart-button a.link, div.tagspopular ul li a:hover, .j2store-product-list #productFilters > input.btn-success, .footer-module-menu .module-title .box-title:after, .hover-name > div {
+  background: #ed1c23;
+}
+div.pagination ul.pagination li a, div.tagspopular ul li a, .border-main-color, .label-info, .btn.btn-outline, [class*='lightbox-2'] .module-title .box-title {
+  border-color: #ed1c23;
+}
+.j2store-myprofile .tabbable.tabs ul.nav-tabs li.active a, .j2store-myprofile-address-list > li .j2store-myprofile-address-controls li.myprofile-address-control-edit a, [class*='lightbox-2'] .module-title .box-title:before, .btn.btn-outline:hover {
+  background: #ed1c23;
+}
+.hover-image:after, .j2store-products-row .j2store-single-product .j2store-thumbnail-image a:after, .j2store-product-module .j2store-module-product-row .j2store-product-image.top a:after {
+  background: rgba(237, 28, 35, 0.6);
+}
+.block-icon > a:hover, .block-icon > i.fa:hover {
+  color: #ed1c23 !important;
+}
+.j2store-sidebar-filters-container #j2store-slider-range.ui-slider .ui-slider-range {
+  background-color: #ed1c23;
+}
+/* ============================ Sub Color ============================ */
+div.catItemReadMore a:hover {
+  color: #b0271b;
+}
+div.itemComments .itemCommentsForm form input#submitCommentButton:hover {
+  background-color: #b0271b;
+}
+.carousel-control > span:not(.sr-only):hover {
+  background-color: #b0271b;
+}

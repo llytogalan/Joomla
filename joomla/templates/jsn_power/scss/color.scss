@@ -1,0 +1,223 @@
+/* ============================ */
+$main-color: false !default;
+@if($main-color != false) {
+	.sunfw-content { 
+		.main-color{
+			color: $main-color;
+		}
+		.bg-main-color{
+			background: $main-color;
+		}
+		.bg-main-color-hover:hover {
+			background: $main-color !important;
+		}
+	}
+	ul {
+		&.newsfeed,
+		&.archive-module,
+		&.relateditems,
+		&.categories-module,
+		&.category-module,
+		&.mostread,
+		&.latestnews,
+		&.latestusers {
+			li {
+				color: $main-color;
+				a * {
+					color: $main-color;
+				}
+			}
+		}
+		&.categories-module ul {
+			li {
+				color: $main-color;
+			}
+		}
+	}
+	.item-page.edit #com-content-formTabs > li {
+		&.active {
+			> a:hover,
+			> a {
+				border-top-color: $main-color;
+			}
+		}
+		> a:hover {
+			border-top-color: $main-color;
+		}
+	}
+	.richbox-2 .module-title h3.box-title:before,
+	.lightbox-2 .module-title h3.box-title:after{
+		background: $main-color;
+	}
+	div.pagination ul.pagination li a:hover,
+	div.pagination ul.pagination li.active a,
+	div.itemComments .itemCommentsForm form input#submitCommentButton{
+		background-color: $main-color;
+	}
+	div.catItemReadMore a{
+		color: $main-color;
+	}
+	.carousel-control > span:not(.sr-only){
+		background-color: $main-color;
+	}
+	.label-info[href]:hover, .label-info[href]:focus,
+	.content_rating + form input[name="submit_vote"] {
+		background: $main-color;
+		border-color: $main-color;
+	}
+	ul.nav[class*='menu-treemenu'] li a:hover{
+		color: $main-color;
+	}
+	.color-img img {
+		background-color: $main-color;
+	}
+	dl.search-results dt.result-title a:hover,
+	.blog-featured h2.item-title a:hover, .blog h2.item-title a:hover,
+	.cat-children .item-title.page-header a:hover, .categories-list .item-title.page-header a:hover,
+	.box-effect-hover .box-image .box-icon a{
+		color: $main-color !important;
+	}
+	.bg-main-color {
+		.jsn-es-background {
+			background-color: $main-color !important;
+		}
+	}
+	ul	{
+		&.nav[class*='menu-treemenu'] {
+			li {
+				&.current {
+					> a {
+					   color: $main-color;
+					}
+				}
+			}
+		}
+	}
+	blockquote{
+		border-color: $main-color;
+		i.fa{
+			color: $main-color;
+		}
+	}
+	.btn.btn-plain:after{
+		background-color: $main-color;
+	}
+	.text-main-color-hover:hover,
+	.sunfw-quote i.fa {
+		color: $main-color;
+	}
+	.sunfw-quote{
+		border-color: $main-color;
+	}
+	div.pagination ul.pagination li a,
+	ul.nav.menu li a:hover,
+	.btn.btn-plain:hover {
+		color: $main-color;
+	}
+	.bg-2nd-subcolor {
+		background-color: darken(desaturate(adjust-hue($main-color, 8.5042%), 76.5101%), 20.7843%);
+	}
+	.sunfw-scrollup:hover {
+		background-color: desaturate(adjust-hue($main-color, 8.6815%), 88.6275%);
+	}
+	.box-tabs > nav > [data-active="true"]{
+		color: $main-color;
+	}
+	nav.navbar.sunfw-menu-head ul.navbar-nav {
+		> li {
+			&:hover,
+			&.active {
+				> a {
+					color: $main-color;
+				}
+			}
+		}
+	}
+	.navigation-slider .galleria-image-nav .galleria-image-nav-right, .navigation-slider .galleria-image-nav .galleria-image-nav-left,
+	.box-effect-hover .box-image:after{
+		background: $main-color;
+	}
+	.contact-category ul [class*="span"].list-title a:hover,
+	.contact .accordion-group .accordion-heading a:hover,
+	.btn.btn-plain:hover,
+	[class*="j2store-"] .sale-price,
+	.hover-image:before,
+	.j2store-products-row .j2store-single-product .j2store-thumbnail-image a:before,
+	.j2store-product-module .j2store-module-product-row .j2store-product-image.top a:before,
+	.btn.btn-outline,
+	.page-header h2 a:hover{
+		color: $main-color;
+	}
+	.readmore a{
+		&:hover{
+			color: $main-color;
+		}
+	}
+	div.tagspopular ul li a,
+	.j2store-single-product .tab-content-detail #j2store-product-detail-tab li.active a,
+	.j2store-single-product .tab-content-detail #j2store-product-detail-tab li a:hover,
+	.j2store-categories-module li h4 a:hover,
+	ul.sunfw-tpl-menu > li.megamenu ul.sunfw-megamenu-sub-menu .modulecontainer h3.module-title,
+	.label-info,
+	div.pagination ul.pagination li:not([class*="hidden-"]) a,
+	div.pagination ul.pagination li.disabled a,
+	body#sunfw-master .hover-main-color:hover,
+	ul.category-module.articles-list li .mod-articles-category-title:hover,
+	[class*="j2store-"] .product-title:hover {
+		color: $main-color;
+	}
+	.itemView .contentPost .itemTagsBlock .itemTags li a:hover,
+	.catItemTags li a:hover,
+	.userView .userItemView .userItemBody .userDescItem .userItemTagsBlock .userItemTags li a:hover{
+		background-color: $main-color;
+		border-color: $main-color;
+	}
+	.j2store-sidebar-filters-container #j2store-slider-range .ui-slider-handle,
+	.j2store .j2store-cart .table-bordered + .buttons-right .cart-checkout-button a.btn-success,
+	.j2store-minicart-button a.link,
+	div.tagspopular ul li a:hover,
+	.j2store-product-list #productFilters > input.btn-success,
+	.footer-module-menu .module-title .box-title:after,
+	.hover-name > div {
+		background: $main-color;
+	}
+	div.pagination ul.pagination li a,
+	div.tagspopular ul li a,
+	.border-main-color,
+	.label-info,
+	.btn.btn-outline,
+	[class*='lightbox-2'] .module-title .box-title {
+		border-color: $main-color;
+	}
+	.j2store-myprofile .tabbable.tabs ul.nav-tabs li.active a,
+	.j2store-myprofile-address-list > li .j2store-myprofile-address-controls li.myprofile-address-control-edit a,
+	[class*='lightbox-2'] .module-title .box-title:before,
+	.btn.btn-outline:hover {
+		background: $main-color;
+	}
+	.hover-image:after,
+	.j2store-products-row .j2store-single-product .j2store-thumbnail-image a:after,
+	.j2store-product-module .j2store-module-product-row .j2store-product-image.top a:after {
+		background: rgba($main-color, 0.6);
+	}
+	.block-icon > a:hover,
+	.block-icon > i.fa:hover{
+		color: $main-color !important;
+	} 
+	.j2store-sidebar-filters-container #j2store-slider-range.ui-slider .ui-slider-range {
+		background-color: $main-color;
+	}
+}
+/* ============================ Sub Color ============================ */
+$sub-color: false !default;
+@if($sub-color != false){
+	div.catItemReadMore a:hover{
+		color: $sub-color;
+	}
+	div.itemComments .itemCommentsForm form input#submitCommentButton:hover{
+		background-color: $sub-color;
+	}
+	.carousel-control > span:not(.sr-only):hover{
+		background-color: $sub-color;
+	}
+}

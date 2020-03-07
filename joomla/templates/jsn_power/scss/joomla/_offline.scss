@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:400,500,600,700&display=swap');
+body.site.offline {
+    background-image: url(http://rc.joomlashine.com/demo/joomla_templates/jsn_power/j30/pro/power/images/joomlashine/sample/coming-soon/coming-soon-bg.jpg);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    #content {
+        display: flex;
+        height: calc(100vh);
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .content-inner {
+        padding: 15px;
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0px 0px 8px;
+        }
+        .countdown-timer {
+            .countdown {
+                width: 90px;
+                height: 90px;
+                border-radius: 5px;
+                font-size: 45px;
+                font-weight: 500;
+                line-height: 90px;
+                margin: 0px 0px 10px;
+                color: rgb(255, 255, 255);
+                font-family: 'Saira Semi Condensed', sans-serif;
+            }
+            .day-container,
+            .hour-container,
+            .minute-container,
+            .second-container {
+                color: rgb(164, 171, 184);
+                font-size: 18px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+            }
+        }
+        form#form-login{
+            margin-top: 30px;
+            .input-group {
+                .input-group-prepend {
+                    z-index: 9;
+                    padding: 0px 14px;
+                    background-color: #e9ecef;
+                    border: 1px solid #ced4da;
+                    margin-right: -1px;
+                    height: 40px;
+                    line-height: 40px;
+                    border-radius: 5px 0 0 5px;
+                }
+                .pd-left {
+                    border: 1px none rgb(204, 204, 204);
+                    border-radius: 2px;
+                    box-shadow: none;
+                    height: auto;
+                    padding: 2px 20px;
+                    width: 100%;
+                    font-size: 14px;
+                    color: rgb(51, 51, 51);
+                    background-color: #ffffff;
+                    line-height: 32px;
+                    &:focus {
+                        border-color: #bec0c6;
+                    }
+                }
+            }
+            .btn-primary {
+                background: #ed1c23;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #ed1c23;
+                color: rgb(255, 255, 255);
+                letter-spacing: 0px;
+                border-radius: 2px;
+                padding: 8px 25px;
+                box-shadow: none;
+                font-size: 13px;
+                font-weight: 700;
+                vertical-align: top;
+                margin-left: 5px;
+                margin-top: 0px;
+                &:hover {
+                    background-color: #ffffff;
+                    color: #ed1c23;
+                }
+            }
+        }
+    }
+    
+    .goto-home {
+        margin: 40px 0px 0px;
+        a {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            border-style: none;
+            padding: 9px 28px;
+            line-height: 1.5;
+            background: #ed1c23;
+            color: #ffffff;
+        }
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    body.site.offline {
+        .content-inner {
+            .countdown-timer {
+                .countdown {
+                    width: 70px;
+                }
+                .day-container,
+                .hour-container,
+                .minute-container,
+                .second-container {
+                    font-size: 14px;
+                    width: 70px;
+                }
+            }
+        }
+    }
+}

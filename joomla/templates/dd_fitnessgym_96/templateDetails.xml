@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" client="site" type="template" method="upgrade">
+  <name>dd_fitnessgym_96</name>
+  <creationDate>2016-10-08</creationDate>
+ <version>1.0</version>
+  <author>DiabloDesign</author>
+  <authorUrl>http://diablodesign.eu</authorUrl>
+<authorUrl>http://www.diablodesign.eu</authorUrl>
+	<copyright>Copyright (C) DiabloDesign License All rights reserved.</copyright>
+	<version>1.0.0</version>
+
+  <description>
+	<![CDATA[
+		<style type="text/css" media="all">
+				<!--
+			
+				h1 {clear:both;font-family: Georgia, sans-serif;font-size:36px;  font-weight: normal;}
+		
+		
+				-->
+			</style>
+			<script src="../templates/dd_fitnessgym_96/admin/jscolor/jscolor.js"></script>
+	        <div class="dd-description clearfix">
+	        <h1><img src="http://diablodesign.eu/syg.png" /></a><span style="color: #cc0607;"> DD Fitness Gym 96 Free version</span></h1>
+	        <hr>
+			<span style="color: #a0a0a0; display: block; margin-top: 2px;"><li>Not for commercial!!! for commercial use, you must pay a special license (10 EURO)</li></span>
+			<span style="color: #a0a0a0; display: block; margin-top: 2px;"><li>Buy template version pro</li></span>
+			<div style="margin: 20px 0 0;">
+					<a style="text-decoration: none !important; outline: none;" target="_blank" href="http://diablodesign.eu/index.php/dd-fitnesgym-96">
+						<img src="http://diablodesign.eu/images/paypal.gif" />
+					</a>
+					<a href="http://diablodesign.eu/index.php/dd-fitnesgym-96" target="_blank" style="margin: 0 20px; color: #3ea5ea;">Buy Commercial license AMOUNT 10 €</a>
+					
+					<span style="color: #ff0000; display: block; margin-top: 2px;"><li>Szablonu nie można używać na stonach firmowych!!! Licencja dla stron firmowych kosztuje. (40PLN Brutto).</li> <li> Zakupić licencję można na naszej stronie internetowej.<a style="font-size: 15px; color: #3ea5ea;" target="_blank" href="http://www.diablodesign.eu/formularz-zamowienia">www.diablodesign.eu</a></li></span>
+				</div>
+				
+
+		
+		
+	</div>
+	]]>
+	</description>
+  <files>
+    <file>CloudZoom.js</file>
+
+    <file>blank.png</file>
+    <file>bootstrap.min.js</file>
+    <file>component.php</file>
+    <file>error.php</file>
+    <file>functions-additional.php</file>
+    <file>functions.php</file>
+    <file>index.html</file>
+    <file>index.php</file>
+    <file>jquery.js</file>
+    <file>layout.core.js</file>
+    <file>layout.ie.css</file>
+    <file>layout.ie.js</file>
+    <file>modrender.php</file>
+    <file>script.js</file>
+    <file>style.ie.css</file>
+    <file>templateDetails.xml</file>
+
+    <file>virtuemart.js</file>
+	  <folder>admin</folder>
+    <folder>css</folder>
+    <folder>data</folder>
+    <folder>fields</folder>
+    <folder>html</folder>
+    <folder>images</folder>
+    <folder>includes</folder>
+    <folder>js</folder>
+    <folder>language</folder>
+    <folder>library</folder>
+    <folder>plugins</folder>
+    <folder>prototypes</folder>
+    <folder>templates</folder>
+  </files>
+  <positions>
+    <position>bottom-banner-1</position>
+    <position>bottom-banner-3</position>
+    <position>breadcrumb</position>
+    <position>dd-footer-1</position>
+    <position>dd-footer-2</position>
+    <position>dd-footer-3</position>
+    <position>dd-footer-4</position>
+    <position>dd-footer-5</position>
+    <position>dd-footer-6</position>
+    <position>dd-footer-7</position>
+    <position>dd-footer-8</position>
+    <position>footer-banner-1</position>
+    <position>left</position>
+    <position>position-1</position>
+    <position>position-7</position>
+    <position>position-8</position>
+    <position>topbanner-1</position>
+  </positions>
+  <config>
+    <fields name="params" addfieldpath="/templates/dd_fitnessgym_96/fields">
+      <fieldset name="logo" label="Logo">
+          <field type="spacer" class="text" label="...........................................LOGO......................................................." /> 
+          <field name="logoFile" default="templates/dd_fitnessgym_96/images/logo.png" type="media" label="TPL_LOGO_LABEL" description="TPL_LOGO_DESC"/>
+     
+      </fieldset>
+	  
+	  <fieldset name="license" label="License Key">
+           <field type="spacer" class="text" label="......................License.KEY..................................................................." />         
+           <field name="license" type="text" default="XXXX-XXXX-XXXX-XXX" size="50" label="License key" description="License key" disabled="true"/>         
+     </fieldset>
+	  	
+	 <fieldset name="analytics" label="Google analytics PRO">
+          <field type="spacer" class="text" label="......................Google.Analytics..............................................................." />
+          <field name="analytics" type="text" default="UA-XXXXXXXX-1" size="50" label="tracking Id" disabled="true"/>
+		  
+		 <field name="ac" type="radio" default="0" class="btn-group" label="" description="test">
+					<option value="0">Disabled</option>
+				
+	      </field>         
+     </fieldset>
+
+
+	
+      <fieldset name="favicon" label="Favicon">  
+          <field type="spacer" class="text" label="...........................................FAVICON...................................................." />    
+          <field name="fav" type="media" label="Upload favicon" description="" default="templates/dd_fitnessgym_96/images/favicon.ico" disabled="false"/>
+      </fieldset>
+	  
+	  <fieldset name="headercontact" label="Header contact">  
+          <field type="spacer" class="text" label="...........................................Telephone.................................................." />
+		  <field name="hc1" type="text" label="Telephone" description="" default="Telephone" disabled="false"/>    
+          <field name="hc2" type="text" label="Telephone" description="" default="+1 (555) 456 3890" disabled="false"/>
+		  <field name="hc3" type="text" label="Telephone 2" description="" default="+1 (555) 456 3890" disabled="false"/>
+		 
+		  <field type="spacer" class="text" label="...........................................Adress....................................................." />  
+		  <field name="hc4" type="text" label="Location" description="" default="Location" disabled="false"/>      
+          <field name="hc5" type="text" label="Adress line 1" description="" default="4934 Irving Place" disabled="false"/>
+		  <field name="hc6" type="text" label="Adress line 2" description="" default="Pond, MO 63040" disabled="false"/>
+		  <field type="spacer" class="text" label="...........................................Didable.Header.Contact....................................." />  
+		  <field name="hcl" type="radio" default="1" class="btn-group" label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				
+	      </field>  
+      </fieldset>
+	    <fieldset name="hotinfo" label="Hot Info PRO">  
+	  	<field type="spacer" class="text" label="...........................................HOT.INFO....................................................." /> 
+		<field name="hin" type="text" default="HOT-INFO" size="50" label="Name HOT-INFO" disabled="false"/>
+		<field name="hi" type="text" default="Pilates Is Thought To Be Whole – Body Fitness" size="50" label="HOT NEWS" disabled="false"/>
+		<field name="hil" type="text" default="" size="50" label="http:// " disabled="false"/>
+		<field name="speedh" type="text" default="3" size="50" label="speed hot info " disabled="false"/>
+			<field type="spacer" label="Disable HOT INFO " />
+			<field name="hic" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+		</fieldset>
+	  	 <fieldset name="slideshow" label="Slideshow">
+		  
+		  <field type="spacer" class="text" label="...............................SLIDE.1................................................................" />	
+		  <field name="sf1" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/slideshow/1.jpg"/>
+		  <field name="st1" type="text" default="Business  caption " label="Title 1" disabled="false"/>
+		  <field name="st1a" type="text" default="Business  caption 2 " label="Title 2" disabled="false"/>
+		  <field name="ste1" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" description=""/>	
+				
+	      
+		  
+		  <field type="spacer" class="text" label="...............................Button.................................................................." />
+		  <field name="sb1" type="text" default="Read More" size="50" label="button" description=""/>
+		  <field name="sbl1" type="text" default="http://" size="50" label="http://" description=""/>
+		  <field type="spacer" label="Disable slide 1 " />
+			 <field name="slide1" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>	
+		  
+		   <field type="spacer" class="text" label="...............................SLIDE.2................................................................" />	
+		  <field name="sf2" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/slideshow/2.jpg"/>
+		  <field name="st2" type="text" default="Business  caption " label="Title 1" disabled="false"/>
+		  <field name="st2a" type="text" default="Business  caption " label="Title 2" disabled="false"/>
+		  <field name="ste2" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" description=""/>
+		 		
+	      
+		  
+		  <field type="spacer" class="text" label="...............................Button.................................................................." />
+		  <field name="sb2" type="text" default="Read More" size="50" label="button" description=""/>
+		  <field name="sbl2" type="text" default="http://" size="50" label="http://" description=""/>
+		  	  <field type="spacer" label="Disable slide 2 " />
+			 <field name="slide2" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+		  
+		  <field type="spacer" class="text" label="...............................SLIDE.3................................................................" />	
+		  <field name="sf3" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/slideshow/3.jpg"/>
+		  <field name="st3" type="text" default="Business  caption " label="Title 1" disabled="false"/>
+		  <field name="st3a" type="text" default="Business  caption " label="Title 2" disabled="false"/>
+		  <field name="stc3" type="text" default="ffffff" label="Color caption" disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+		  <field name="ste3" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" description=""/>			
+	      
+		  
+		  <field type="spacer" class="text" label="...............................Button.................................................................." />
+		  <field name="sb3" type="text" default="Read More" size="50" label="button" description=""/>
+		  <field name="sbl3" type="text" default="http://" size="50" label="http://" description=""/>
+		  
+		  	  <field type="spacer" label="Disable slide 3 " />
+			 <field name="slide3" type="radio" default="0" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					
+					
+					</field>
+		  
+		  <field type="spacer" class="text" label="...............................SLIDE.4................................................................" />	
+		  <field name="sf4" type="media" label="Upload photo" description="" default="templates/dd_fitnessgym_96/images/slideshow/4.jpg"/>
+		  <field name="st4" type="text" default="Business  caption " label="Title 1" disabled="false"/>
+		  <field name="st4a" type="text" default="Business  caption " label="Title 2" disabled="false"/>
+		  <field name="stc4" type="text" default="ffffff" label="Color caption" disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+		  <field name="ste4" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" description=""/>			
+	      
+		  
+		  <field type="spacer" class="text" label="...............................Button.................................................................." />
+		  <field name="sb4" type="text" default="Read More" size="50" label="button" description=""/>
+		  <field name="sbl4" type="text" default="http://" size="50" label="http://" description=""/>
+		  
+		  	  <field type="spacer" label="Disable slide 4 " />
+			 <field name="slide4" type="radio" default="0" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					
+					
+					</field>
+		  
+		   <field type="spacer" class="text" label="...............................SLIDE.5................................................................" />	
+		  <field name="sf5" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/slideshow/5.jpg"/>
+		  <field name="st5" type="text" default="Business  caption " label="Title 1" disabled="false"/>
+		  <field name="st5a" type="text" default="Business  caption " label="Title 2" disabled="false"/>
+		 
+		  <field name="ste5" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" description=""/>			
+	      
+		  
+		  <field type="spacer" class="text" label="...............................Button................................................................." />
+		  <field name="sb5" type="text" default="Read More" size="50" label="button" description=""/>
+		  <field name="sbl5" type="text" default="http://" size="50" label="http://" description=""/>
+		  
+		  	  <field type="spacer" label="Disable slide 5 " />
+			 <field name="slide5" type="radio" default="0" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					
+					
+					</field>
+		  <field type="spacer" class="text" label="..........................................Speed slideshow............................................." />   
+		  <field name="speed" type="text" default="4600" size="50"  label="Speed slideshow 0/ms " disabled="false"/>
+		  
+		  <field type="spacer" class="text" label="...............................Text.color............................................................." />	
+		  <field type="spacer" class="text" label="...............................Text..................................................................." />
+		  <field name="stc1" type="text" default="ffffff" label="Color Title 1" disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+		  <field name="stc1a" type="text" default="ffffff" label="Color Title 2" disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+		  <field name="stc1b" type="text" default="ffffff" label="Color Text " disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+		  
+		  
+		  <field type="spacer" label="Disable all text " />
+			 <field name="slcc" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>			
+		
+	  </fieldset>
+	   
+	   <fieldset name="news" label="News Box PRO">
+          <field type="spacer" class="text" label="......................News.1......................................................................." />
+		   <field name="n1" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/news/1.jpg" />         
+           <field name="n2" type="text" default="Programs Activities" size="50" label="Title" />
+		   <field name="n3" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field type="spacer" class="text" label="...............................Button..............................................................." />
+		   <field name="n4" type="text" default="Read More" size="50" label="button" />
+		   <field name="n5" type="text" default="http://" size="50" label="http://" />
+		     
+		  <field type="spacer" class="text" label="......................News.2......................................................................." />
+		   <field name="n6" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/news/2.jpg" />         
+           <field name="n7" type="text" default="Personal Training" size="50" label="Title"  />
+		   <field name="n8" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field type="spacer" class="text" label="...............................Button..............................................................." />
+		   <field name="n9" type="text" default="Read More" size="50" label="button" />
+		   <field name="n10" type="text" default="http://" size="50" label="http://" />  
+		   
+		  <field type="spacer" class="text" label="......................News.3......................................................................." />
+		   <field name="n11" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/news/3.jpg"/>         
+           <field name="n12" type="text" default="Club Information" size="50" label="Title"  />
+		   <field name="n13" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field type="spacer" class="text" label="...............................Button..............................................................." />
+		   <field name="n14" type="text" default="Read More" size="50" label="button" />
+		   <field name="n15" type="text" default="http://" size="50" label="http://" /> 
+		   
+		   <field type="spacer" label="Disable News Box " />
+			 <field name="dnb" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>	
+		            
+     </fieldset>
+	 
+	 	   <fieldset name="info" label="Info Box PRO">
+           <field type="spacer" class="text" label="......................info.1......................................................................." />
+		   <field name="i1" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/icon/1.png" />         
+           <field name="i2" type="text" default="Title 1" size="50" label="Title" />
+		   <field name="i3" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   
+		   <field type="spacer" class="text" label="......................info.2......................................................................." />
+		   <field name="i4" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/icon/2.png" />         
+           <field name="i5" type="text" default="Title 2" size="50" label="Title"   />
+		   <field name="i6" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   
+		   <field type="spacer" class="text" label="......................info.3......................................................................." />
+		   <field name="i7" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/icon/3.png" />         
+           <field name="i8" type="text" default="Title 3" size="50" label="Title"  />
+		   <field name="i9" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   
+		   <field type="spacer" class="text" label="......................info.4......................................................................." />
+		   <field name="i10" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/icon/4.png" />         
+           <field name="i11" type="text" default="Title 4" size="50" label="Title" />
+		   <field name="i12" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   
+		   <field type="spacer" class="text" label="......................info.5......................................................................." />
+		   <field name="i13" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/icon/5.png" />         
+           <field name="i14" type="text" default="Title 5" size="50" label="Title"  />
+		   <field name="i15" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+	 		   
+			<field type="spacer" class="text" label="......................info.6......................................................................." />
+		   <field name="i16" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/icon/6.png" />         
+           <field name="i17" type="text" default="Title 6" size="50" label="Title"   />
+		   <field name="i18" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />   
+		   
+		     <field type="spacer" label="Disable info Box " />
+			 <field name="dib" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+		
+     </fieldset>
+	 
+	 	   <fieldset name="testimonials" label="testimonials Box PRO">
+           <field type="spacer" class="text" label="......................Testimonials.1......................................................................." />
+		   <field name="tb1" type="media" label="Upload Background image" description="" default="templates/dd_fitnessgym_96/images/persons/backround/1.jpg" />      
+		   <field name="t1" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/persons/1.png" />         
+		   <field name="t2" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field name="t3" type="text" default="BRIAN CORKE" size="50" label="Name Person" />
+		   <field type="spacer" class="text" label="......................Testimonials.1......................................................................." />
+		   <field name="tb2" type="media" label="Upload Background image " description="" default="templates/dd_fitnessgym_96/images/persons/backround/2.jpg" />   
+		   <field name="t4" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/persons/1.png" />         
+		   <field name="t5" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field name="t6" type="text" default="BRIAN CORKE" size="50" label="Name Person" />
+		   <field type="spacer" class="text" label="......................Testimonials.1......................................................................." />
+		   <field name="tb3" type="media" label="Upload Background image " description="" default="templates/dd_fitnessgym_96/images/persons/backround/3.jpg" />   
+		   <field name="t7" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/persons/1.png" />         
+		   <field name="t8" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field name="t9" type="text" default="BRIAN CORKE" size="50" label="Name Person" />
+		   
+		      <field type="spacer" label="Disable testimonials Box " />
+			 <field name="dtb" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+
+     </fieldset>
+	 
+	  	   <fieldset name="gallery" label="Gallery PRO">
+		   <field name="g1" type="text" default="Our Gallery" size="50" label="Name Gallery" />
+		   <field name="g2" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Description Gallery" />
+		   
+           <field type="spacer" class="text" label="......................Image.1......................................................................." />
+		   <field name="g3" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/gallery/1.jpg" />         
+		   <field name="g4" type="text" default="PILATES" size="50" label="Name Image" />
+		   <field name="g5" type="text" default="http://" size="50" label="http://" />
+		   <field type="spacer" class="text" label="......................Image.2......................................................................." />
+           <field name="g6" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/gallery/2.jpg" />         
+		   <field name="g7" type="text" default="PURE GYM" size="50" label="Name Image" />
+		   <field name="g8" type="text" default="http://" size="50" label="http://" />
+		   <field type="spacer" class="text" label="......................Image.3......................................................................." />
+		   <field name="g9" type="media" label="Upload photo " description="" default="templates/dd_fitnessgym_96/images/gallery/3.jpg" />         
+		   <field name="g10" type="text" default="BOXING" size="50" label="Name Image" />
+		   <field name="g11" type="text" default="http://" size="50" label="http://" />
+		   
+		      <field type="spacer" label="Disable Gallery Box " />
+			 <field name="dgb" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+
+	 	 </fieldset>
+		 
+			<fieldset name="maps" label="Google Map PRO">
+			<field type="spacer" class="text" label="...........................................Google.Maps.................................................." /> 
+            <field name="map1" type="text" default="Krakow" label="City" description="City" filter="string" />
+			<field name="map2" type="text" default="NowaHuta" label="Street" description="Street" filter="string" />
+			<field type="spacer" label="Disable Map" />
+			<field name="mc" type="radio" default="1" class="btn-group"  label="" description="map">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>
+					</fieldset>
+					
+						     <fieldset name="footer" label="Footer BOX">
+          <field type="spacer" class="text" label="......................Links............................................................................" />
+		  <field name="l0" type="text" default="Links" size="50" label="Header Title" description="" disabled="false"/>
+		  <field name="l1" type="text" default="Home" size="50" label="Title" description="" disabled="false"/>
+		  <field name="l2" type="text" default="http://" size="50" label="http://" description="" disabled="false"/>
+		  <field name="l3" type="text" default="About" size="50" label="Title" description="" disabled="false"/>
+		  <field name="l4" type="text" default="http://" size="50" label="http://" description="" disabled="false"/>
+		  <field name="l5" type="text" default="Forum" size="50" label="Title" description="" disabled="false"/>
+		  <field name="l6" type="text" default="http://" size="50" label="http://" description="" disabled="false"/>
+		  <field name="l7" type="text" default="Fedback" size="50" label="Title" description="" disabled="false"/>
+          <field name="l8" type="text" default="http://" size="50" label="http://" description="" disabled="false"/>
+		  
+		  <field type="spacer" class="text" label="......................Contact.Footer..................................................................." />
+		  <field name="f3" type="text" default="Visit Our Office" size="50" label="Title" description="" disabled="false"/>
+          <field name="f4" type="text" default="+1 (555) 456 3890" size="50" label="Telephone 1" description="" disabled="false"/>
+		  <field name="f5" type="text" default="+1 (555) 564 9354" size="50" label="Telephone 2" description="" disabled="false"/>
+		   
+		  <field name="f6" type="text" default="4934 Irving Place," size="50" label="Adress line 1" description="" disabled="false"/> 
+		  <field name="f7" type="text" default="Pond, MO 63040" size="50" label="Adress line 2" description="" disabled="false"/>
+		  
+		  <field name="f8" type="text" default="support@company.com " size="50" label="E-mail 1" description="" disabled="false"/>
+		  <field name="f9" type="text" default="info@company.com" size="50" label="E-mail 2" description="" disabled="false"/>
+		  
+		            <field type="spacer" class="text" label="...........................................FOOTER......................................................." />    
+          <field name="footer1" type="text" default="FitnessGym" size="50" label="Site name" description="footer site name"/>
+		  
+		 <field type="spacer" class="text" label="...........................................Social icon......................................................." />    
+		 <field type="spacer" class="text" label="...........................................FACEBOOK................................................." />
+			<field name="facebook" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url:" description="facebok link" filter="string" />
+				<field name="fc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+				<field type="spacer" class="text" label=".........................................TWITTER................................................." />
+            <field name="twitter" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url:" description="Twitter link" filter="string" />
+				<field name="tc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+			
+				<field type="spacer" class="text" label=".........................................GOOGLE+................................................." />
+			<field name="google" type="text" default="//plus.google.com/share?url=http://google.com" label="Google+ url:" description="Google+ link" filter="string" />
+				<field name="gc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+					<field type="spacer" class="text" label=".........................................PINTEREST..........................................." />
+			<field name="pinterest" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+				<field name="pc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+				</field>
+	
+		        
+		   
+		  <field type="spacer" label="Disable Foter " />
+			 <field name="dfb" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
+					</field>	   
+     </fieldset>
+	   <fieldset name="design" label="Design BY">
+           <field type="spacer" class="text" label="......................Disable.Design.BY.PRO..........................................................." />         
+            <field name="db" type="radio" default="0" class="btn-group"  label="" >
+					<option value="0">Disabled</option>
+				
+					</field>
+     </fieldset>
+    
+	</fields>
+  </config>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.tpl_dd_fitnessgym_96.ini</language>
+  </languages>
+</extension>
